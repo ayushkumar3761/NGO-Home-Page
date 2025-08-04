@@ -1,0 +1,21 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.nav-link {
+    position: relative;
+}
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7ff133;
+    transition: width 0.3s ease;
+}
+.nav-link:hover:after {
+    width: 100%;
+}
